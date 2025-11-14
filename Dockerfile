@@ -27,7 +27,7 @@ RUN echo 'server { \
     \
     # Manejar rutas para documentación \
     location / { \
-        try_files $uri $uri/ =404; \
+        try_files  / =404; \
     } \
 }' > /etc/nginx/conf.d/default.conf
 
