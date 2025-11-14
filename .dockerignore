@@ -1,0 +1,5 @@
+# Excluir archivos innecesarios del build de Docker
+.git
+.gitignore
+README.md
+*.md
