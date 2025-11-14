@@ -13,13 +13,17 @@ Esta documentación se genera automáticamente desde el proyecto principal:
 
 ## 📝 Para actualizar
 
-En el proyecto principal:
+En el proyecto principal (desde la carpeta docs/):
 ```powershell
 # Construir y sincronizar
 .\sync-docs.ps1
 
-# Hacer commit y push (ver opciones en el script)
+# Hacer commit manualmente en deploy-docs/
+cd deploy-docs
+git add .
+git commit -m "Actualiza documentación"
+git push origin main
 ```
 
 ---
-*Última actualización: 2025-11-13 22:52:36*
+*Última actualización: 2025-11-13 23:22:48*
