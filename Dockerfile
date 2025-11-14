@@ -11,14 +11,6 @@ LABEL maintainer="HammerDev99" \
 # Copiar archivos estáticos al directorio de Nginx
 COPY . /usr/share/nginx/html
 
-# Crear usuario no-root para nginx (mejora de seguridad)
-RUN addgroup -g 101 -S nginx-docs && \
-    adduser -S -D -H -u 101 -h /var/cache/nginx -s /sbin/nologin -G nginx-docs -g nginx-docs nginx-docs && \
-    chown -R nginx-docs:nginx-docs /usr/share/nginx/html && \
-    chown -R nginx-docs:nginx-docs /var/cache/nginx && \
-    chown -R nginx-docs:nginx-docs /var/log/nginx && \
-    chmod -R 755 /usr/share/nginx/html
-
 # Configuración optimizada de Nginx
 RUN echo 'server { \
     listen 80; \
@@ -38,7 +30,7 @@ RUN echo 'server { \
     gzip_types text/plain text/css text/xml text/javascript application/javascript application/xml+rss application/json application/x-javascript application/xml image/svg+xml; \
     \
     # Cache de recursos estáticos (1 año) \
-    location ~* \.(?:css|js|jpg|jpeg|gif|png|ico|cur|gz|svg|svgz|mp4|ogg|ogv|webm|htc|woff|woff2|ttf|eot)$ { \
+    location ~* \.(?:css|js|jpg|jpeg|gif|png|ico|cur|gz|svg|svgz|mp4|ogg|ogv|webm|htc|woff|woff2|ttf|eot|webp)$ { \
         expires 1y; \
         add_header Cache-Control "public, immutable"; \
         access_log off; \
@@ -76,9 +68,3 @@ EXPOSE 80
 # Healthcheck para validar que Nginx está respondiendo
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
     CMD wget --quiet --tries=1 --spider http://localhost/ || exit 1
-
-# Cambiar a usuario no-root
-USER nginx-docs
-
-# Comando de inicio
-CMD ["nginx", "-g", "daemon off;"]

@@ -57,22 +57,23 @@ El despliegue utiliza un contenedor Nginx Alpine optimizado:
 
 - **Imagen base**: `nginx:alpine`
 - **Puerto**: 80
-- **Compresión**: gzip habilitado
-- **Cache**: Headers optimizados para recursos estáticos
-- **Seguridad**: Headers de seguridad HTTP configurados
-- **Usuario**: nginx-docs (no-root)
+- **Compresión**: gzip mejorado (nivel 6, tipos MIME extendidos)
+- **Cache**: Headers optimizados diferenciados (estáticos: 1 año, HTML: sin cache)
+- **Seguridad**: Headers HTTP de seguridad configurados
 - **Healthcheck**: Verificación automática cada 30s
+- **Charset**: UTF-8
 
 ## 🔒 Seguridad
 
-- Usuario no-root en contenedor
-- Headers de seguridad HTTP
-- Sin exposición de versión de Nginx
+- Headers de seguridad HTTP completos
+- Sin exposición de versión de Nginx (server_tokens off)
 - Permissions-Policy restrictivo
+- X-Frame-Options, X-Content-Type-Options, X-XSS-Protection
+- Referrer-Policy configurado
 
 ## 📊 Información del Build
 
-- **Última actualización**: 2025-11-14 10:21:51
+- **Última actualización**: 2025-11-14 10:26:34
 - **Generado por**: sync-docs.ps1 v2.0
 
 ---
