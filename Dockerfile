@@ -29,11 +29,6 @@ RUN echo 'server { \
     location / { \
         try_files $uri $uri/ =404; \
     } \
-    \
-    # Seguridad básica \
-    add_header X-Frame-Options \"SAMEORIGIN\" always; \
-    add_header X-Content-Type-Options \"nosniff\" always; \
-    add_header X-XSS-Protection \"1; mode=block\" always; \
 }' > /etc/nginx/conf.d/default.conf
 
 # Exponer puerto 80
