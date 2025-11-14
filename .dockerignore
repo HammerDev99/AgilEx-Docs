@@ -1,4 +1,41 @@
 # Excluir archivos innecesarios del build de Docker
+
+# Control de versiones
 .git
 .gitignore
+.gitattributes
+.github
+
+# Documentación
 README.md
+*.md
+!index.md
+
+# Archivos del sistema
+.DS_Store
+Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+
+# Temporales y backup
+*.tmp
+*.bak
+*.log
+*.cache
+
+# IDE
+.vscode
+.idea
+*.sublime-*
+
+# Python
+__pycache__
+*.pyc
+*.pyo
+.pytest_cache
+
+# Node
+node_modules
+npm-debug.log

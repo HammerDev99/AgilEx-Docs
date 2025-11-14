@@ -2,7 +2,21 @@
 .DS_Store
 Thumbs.db
 desktop.ini
+*.swp
+*.swo
+*~
 
-# Temporales
+# Temporales y logs
 *.tmp
 *.bak
+*.log
+*.cache
+
+# IDE
+.vscode/
+.idea/
+*.sublime-*
+
+# Build artifacts (si aplica)
+*.zip
+*.tar.gz

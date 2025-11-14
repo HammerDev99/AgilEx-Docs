@@ -1,29 +1,81 @@
-# AgilEx by Marduk - Documentación
+# AgilEx by Marduk - Documentación Oficial
 
-Documentación estática generada con MkDocs Material.
+[![Deploy Status](https://img.shields.io/badge/deploy-easypanel-blue)](https://docs.agilex.sprintjudicial.com)
+[![MkDocs](https://img.shields.io/badge/docs-mkdocs--material-blue)](https://squidfunk.github.io/mkdocs-material/)
+[![Nginx](https://img.shields.io/badge/server-nginx--alpine-green)](https://nginx.org/)
 
-**URL de producción**: https://docs.agilex.sprintjudicial.com
+Documentación estática generada automáticamente con **MkDocs Material**.
+
+## 🌐 URL de Producción
+
+**https://docs.agilex.sprintjudicial.com**
+
+## 📁 Estructura
+
+Este repositorio contiene únicamente los archivos estáticos compilados de la documentación:
+
+- `index.html` - Página principal
+- `assets/` - Recursos estáticos (CSS, JS, imágenes)
+- `search/` - Índice de búsqueda
+- Páginas de documentación en HTML
 
 ## 🔄 Actualización Automática
 
 Esta documentación se genera automáticamente desde el proyecto principal:
-- Repositorio fuente: [GestionExpedienteElectronico_Version1](https://github.com/HammerDev99/GestionExpedienteElectronico_Version1)
-- Generador: MkDocs Material
-- Deploy: Easypanel con webhook de GitHub
 
-## 📝 Para actualizar
+- **Repositorio fuente**: [GestionExpedienteElectronico_Version1](https://github.com/HammerDev99/GestionExpedienteElectronico_Version1)
+- **Generador**: MkDocs Material
+- **Deploy**: Easypanel con auto-deploy desde GitHub
+- **Stack**: Nginx Alpine + Dockerfile optimizado
 
-En el proyecto principal (desde la carpeta docs/):
+## 📝 Flujo de Actualización
+
+### 1. Generar documentación (en el proyecto principal)
+
 ```powershell
-# Construir y sincronizar
+# Desde la carpeta docs/
+cd docs
 .\sync-docs.ps1
+```
 
-# Hacer commit manualmente en deploy-docs/
+### 2. Commit y push
+
+```bash
 cd deploy-docs
 git add .
-git commit -m "Actualiza documentación"
+git commit -m "docs: actualiza documentación v1.5.0"
 git push origin main
 ```
 
+### 3. Deploy automático
+
+Easypanel detecta el push y despliega automáticamente vía webhook de GitHub.
+
+## 🐳 Docker
+
+El despliegue utiliza un contenedor Nginx Alpine optimizado:
+
+- **Imagen base**: `nginx:alpine`
+- **Puerto**: 80
+- **Compresión**: gzip habilitado
+- **Cache**: Headers optimizados para recursos estáticos
+- **Seguridad**: Headers de seguridad HTTP configurados
+- **Usuario**: nginx-docs (no-root)
+- **Healthcheck**: Verificación automática cada 30s
+
+## 🔒 Seguridad
+
+- Usuario no-root en contenedor
+- Headers de seguridad HTTP
+- Sin exposición de versión de Nginx
+- Permissions-Policy restrictivo
+
+## 📊 Información del Build
+
+- **Última actualización**: 2025-11-14 10:21:51
+- **Generado por**: sync-docs.ps1 v2.0
+
 ---
-*Última actualización: 2025-11-14 10:07:09*
+
+**Nota**: Este repositorio es generado automáticamente. No edites archivos directamente aquí.
+Todos los cambios deben hacerse en el [repositorio fuente](https://github.com/HammerDev99/GestionExpedienteElectronico_Version1).
