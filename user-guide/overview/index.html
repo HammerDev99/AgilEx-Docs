@@ -1,0 +1,2103 @@
+
+<!doctype html>
+<html lang="es" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="Documentación completa de la solución RDA para automatizar la creación de índices electrónicos de expedientes judiciales">
+      
+      
+        <meta name="author" content="HammerDev99">
+      
+      
+        <link rel="canonical" href="https://docs.agilex.sprintjudicial.com/user-guide/overview/">
+      
+      
+        <link rel="prev" href="../../RELEASE_v1.5.0/">
+      
+      
+        <link rel="next" href="../installation/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Descripción General - AgilEx by Marduk - Documentación</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/_mkdocstrings.css">
+    
+      <link rel="stylesheet" href="../../assets/extra.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#descripcion-general" class="md-skip">
+          Saltar a contenido
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+      <div data-md-color-scheme="default" data-md-component="outdated" hidden>
+        
+      </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Cabecera">
+    <a href="../.." title="AgilEx by Marduk - Documentación" class="md-header__button md-logo" aria-label="AgilEx by Marduk - Documentación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            AgilEx by Marduk - Documentación
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Descripción General
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="blue" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Búsqueda" placeholder="Búsqueda" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Buscar">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Compartir" aria-label="Compartir" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Limpiar" aria-label="Limpiar" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Inicializando búsqueda
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/HammerDev99/GestionExpedienteElectronico_Version1" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    HammerDev99/GestionExpedienteElectronico_Version1
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Pestañas" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../.." class="md-tabs__link">
+        
+  
+  
+    
+  
+  Inicio
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../RELEASE_v1.5.0/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  Release v1.5.0
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+  Guía del Usuario
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../architecture/overview/" class="md-tabs__link">
+          
+  
+  
+  Arquitectura
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../api/project-structure/" class="md-tabs__link">
+          
+  
+  
+  API y Código
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../development/environment-setup/" class="md-tabs__link">
+          
+  
+  
+  Desarrollo
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../deployment/pyinstaller/" class="md-tabs__link">
+          
+  
+  
+  Despliegue
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../reference/dependencies/" class="md-tabs__link">
+          
+  
+  
+  Referencia
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navegación" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="AgilEx by Marduk - Documentación" class="md-nav__button md-logo" aria-label="AgilEx by Marduk - Documentación" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    AgilEx by Marduk - Documentación
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/HammerDev99/GestionExpedienteElectronico_Version1" title="Ir al repositorio" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    HammerDev99/GestionExpedienteElectronico_Version1
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Inicio
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../RELEASE_v1.5.0/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Release v1.5.0
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    Guía del Usuario
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Guía del Usuario
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Descripción General
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Descripción General
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-gestionexpedienteelectronico_version1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué es GestionExpedienteElectronico_Version1?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proposito-y-contexto-legal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Propósito y Contexto Legal
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Propósito y Contexto Legal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#marco-normativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marco Normativo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automatizacion-de-procesos-administrativos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automatización de Procesos Administrativos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funcionalidades-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionalidades Principales
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Funcionalidades Principales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analisis-automatico-de-documentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Análisis Automático de Documentos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extraccion-de-metadatos" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Extracción de Metadatos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generacion-de-indices" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Generación de Índices
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-procesamiento-soportados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos de Procesamiento Soportados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tipos de Procesamiento Soportados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-cuaderno-unico" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Cuaderno Único
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-expediente-unico" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Expediente Único
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-multiples-expedientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Múltiples Expedientes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arquitectura-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arquitectura del Sistema
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arquitectura del Sistema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#patron-mvc-implementado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patrón MVC Implementado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caracteristicas-arquitectonicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Características Arquitectónicas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flujo-de-trabajo-tipico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flujo de Trabajo Típico
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Flujo de Trabajo Típico">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-seleccion-de-modo" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Selección de Modo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-seleccion-de-carpeta" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Selección de Carpeta
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-analisis-y-validacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Análisis y Validación
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-confirmacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Confirmación
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-procesamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Procesamiento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-finalizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Finalización
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ventajas-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ventajas del Sistema
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ventajas del Sistema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#para-usuarios-finales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Para Usuarios Finales
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#para-administradores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Para Administradores
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#para-desarrolladores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Para Desarrolladores
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#casos-de-uso-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Casos de Uso Principales
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Casos de Uso Principales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oficinas-judiciales-pequenas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Oficinas Judiciales Pequeñas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#juzgados-y-tribunales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Juzgados y Tribunales
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#archivos-judiciales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Archivos Judiciales
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integracion-con-herramientas-existentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integración con Herramientas Existentes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integración con Herramientas Existentes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsoft-excel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microsoft Excel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sistema-de-archivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sistema de Archivos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../installation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Instalación
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../getting-started/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Primeros Pasos
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Arquitectura
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            Arquitectura
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../architecture/overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Visión General
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_5" >
+        
+          
+          <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    API y Código
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_5">
+            <span class="md-nav__icon md-icon"></span>
+            API y Código
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../api/project-structure/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Estructura del Proyecto
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_6" >
+        
+          
+          <label class="md-nav__link" for="__nav_6" id="__nav_6_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Desarrollo
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_6_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_6">
+            <span class="md-nav__icon md-icon"></span>
+            Desarrollo
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../development/environment-setup/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Configuración del Entorno
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_7" >
+        
+          
+          <label class="md-nav__link" for="__nav_7" id="__nav_7_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Despliegue
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_7_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_7">
+            <span class="md-nav__icon md-icon"></span>
+            Despliegue
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../deployment/pyinstaller/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Build con PyInstaller
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+          
+        
+        <input class="md-nav__toggle md-toggle md-toggle--indeterminate" type="checkbox" id="__nav_8" >
+        
+          
+          <label class="md-nav__link" for="__nav_8" id="__nav_8_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Referencia
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_8_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_8">
+            <span class="md-nav__icon md-icon"></span>
+            Referencia
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/dependencies/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Dependencias
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/changelog/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Cambios
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/license/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Licencia
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Tabla de contenidos">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Tabla de contenidos
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#que-es-gestionexpedienteelectronico_version1" class="md-nav__link">
+    <span class="md-ellipsis">
+      ¿Qué es GestionExpedienteElectronico_Version1?
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#proposito-y-contexto-legal" class="md-nav__link">
+    <span class="md-ellipsis">
+      Propósito y Contexto Legal
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Propósito y Contexto Legal">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#marco-normativo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Marco Normativo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#automatizacion-de-procesos-administrativos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Automatización de Procesos Administrativos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#funcionalidades-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Funcionalidades Principales
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Funcionalidades Principales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#analisis-automatico-de-documentos" class="md-nav__link">
+    <span class="md-ellipsis">
+      🔍 Análisis Automático de Documentos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extraccion-de-metadatos" class="md-nav__link">
+    <span class="md-ellipsis">
+      📊 Extracción de Metadatos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#generacion-de-indices" class="md-nav__link">
+    <span class="md-ellipsis">
+      📋 Generación de Índices
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tipos-de-procesamiento-soportados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tipos de Procesamiento Soportados
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tipos de Procesamiento Soportados">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-cuaderno-unico" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Cuaderno Único
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-expediente-unico" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Expediente Único
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-multiples-expedientes" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Múltiples Expedientes
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#arquitectura-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Arquitectura del Sistema
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Arquitectura del Sistema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#patron-mvc-implementado" class="md-nav__link">
+    <span class="md-ellipsis">
+      Patrón MVC Implementado
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#caracteristicas-arquitectonicas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Características Arquitectónicas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#flujo-de-trabajo-tipico" class="md-nav__link">
+    <span class="md-ellipsis">
+      Flujo de Trabajo Típico
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Flujo de Trabajo Típico">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-seleccion-de-modo" class="md-nav__link">
+    <span class="md-ellipsis">
+      1. Selección de Modo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-seleccion-de-carpeta" class="md-nav__link">
+    <span class="md-ellipsis">
+      2. Selección de Carpeta
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-analisis-y-validacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      3. Análisis y Validación
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-confirmacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      4. Confirmación
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-procesamiento" class="md-nav__link">
+    <span class="md-ellipsis">
+      5. Procesamiento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-finalizacion" class="md-nav__link">
+    <span class="md-ellipsis">
+      6. Finalización
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ventajas-del-sistema" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ventajas del Sistema
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Ventajas del Sistema">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#para-usuarios-finales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Para Usuarios Finales
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#para-administradores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Para Administradores
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#para-desarrolladores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Para Desarrolladores
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#casos-de-uso-principales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Casos de Uso Principales
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Casos de Uso Principales">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#oficinas-judiciales-pequenas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Oficinas Judiciales Pequeñas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#juzgados-y-tribunales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Juzgados y Tribunales
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#archivos-judiciales" class="md-nav__link">
+    <span class="md-ellipsis">
+      Archivos Judiciales
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#integracion-con-herramientas-existentes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Integración con Herramientas Existentes
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Integración con Herramientas Existentes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#microsoft-excel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Microsoft Excel
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#sistema-de-archivos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sistema de Archivos
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="descripcion-general">Descripción General<a class="headerlink" href="#descripcion-general" title="Permanent link">&para;</a></h1>
+<h2 id="que-es-gestionexpedienteelectronico_version1">¿Qué es GestionExpedienteElectronico_Version1?<a class="headerlink" href="#que-es-gestionexpedienteelectronico_version1" title="Permanent link">&para;</a></h2>
+<p>GestionExpedienteElectronico_Version1 es una solución RDA (Robotic Desktop Automation) especializada en automatizar la creación de índices electrónicos para expedientes judiciales, cumpliendo con los estándares establecidos en el <strong>Protocolo PCSJA20-11567 de 2020</strong> del Plan Estratégico de Transformación Digital de la Rama Judicial colombiana.</p>
+<h2 id="proposito-y-contexto-legal">Propósito y Contexto Legal<a class="headerlink" href="#proposito-y-contexto-legal" title="Permanent link">&para;</a></h2>
+<h3 id="marco-normativo">Marco Normativo<a class="headerlink" href="#marco-normativo" title="Permanent link">&para;</a></h3>
+<p>La aplicación se enmarca en el <strong>Programa de Expediente Electrónico</strong> de la Rama Judicial colombiana y se ajusta específicamente al protocolo:</p>
+<p><strong>"Protocolo para la gestión de documentos electrónicos, digitalización y conformación del expediente electrónico" Versión 2.0</strong></p>
+<p><a href="https://www.ramajudicial.gov.co/documents/3196516/46103054/Protocolo+para+la+gesti%C3%B3n+de+documentos+electronicos.pdf/cb0d98ef-2844-4570-b12a-5907d76bc1a3">📄 Link directo al Protocolo</a></p>
+<h3 id="automatizacion-de-procesos-administrativos">Automatización de Procesos Administrativos<a class="headerlink" href="#automatizacion-de-procesos-administrativos" title="Permanent link">&para;</a></h3>
+<p>El software automatiza tareas que tradicionalmente se realizan de forma manual:</p>
+<ul>
+<li><strong>Antes</strong>: Un empleado judicial debe revisar cada documento, extraer metadatos manualmente y crear el índice</li>
+<li><strong>Ahora</strong>: La aplicación procesa automáticamente carpetas completas y genera índices estandarizados</li>
+</ul>
+<h2 id="funcionalidades-principales">Funcionalidades Principales<a class="headerlink" href="#funcionalidades-principales" title="Permanent link">&para;</a></h2>
+<h3 id="analisis-automatico-de-documentos">🔍 Análisis Automático de Documentos<a class="headerlink" href="#analisis-automatico-de-documentos" title="Permanent link">&para;</a></h3>
+<p>La aplicación puede procesar automáticamente:</p>
+<ul>
+<li><strong>PDF</strong>: Extracción de páginas, metadatos y propiedades</li>
+<li><strong>Word</strong> (.docx, .doc): Conteo de páginas y datos del documento</li>
+<li><strong>Excel</strong> (.xlsx, .xls): Información de hojas y estructura</li>
+</ul>
+<h3 id="extraccion-de-metadatos">📊 Extracción de Metadatos<a class="headerlink" href="#extraccion-de-metadatos" title="Permanent link">&para;</a></h3>
+<p>Para cada documento, la aplicación extrae:</p>
+<table>
+<thead>
+<tr>
+<th>Metadato</th>
+<th>Descripción</th>
+<th>Origen</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Nombre Documento</td>
+<td>Nombre del archivo</td>
+<td>Sistema de archivos</td>
+</tr>
+<tr>
+<td>Fecha Creación</td>
+<td>Fecha de creación original</td>
+<td>Propiedades del archivo</td>
+</tr>
+<tr>
+<td>Fecha Incorporación</td>
+<td>Fecha de incorporación al expediente</td>
+<td>Automático (fecha actual)</td>
+</tr>
+<tr>
+<td>Número de Páginas</td>
+<td>Total de páginas del documento</td>
+<td>Análisis del contenido</td>
+</tr>
+<tr>
+<td>Formato</td>
+<td>Tipo de archivo (PDF, DOCX, etc.)</td>
+<td>Extensión del archivo</td>
+</tr>
+<tr>
+<td>Tamaño</td>
+<td>Tamaño en unidades legibles</td>
+<td>Sistema de archivos + conversión</td>
+</tr>
+<tr>
+<td>Origen</td>
+<td>Electrónico o Digitalizado</td>
+<td>Configuración o análisis</td>
+</tr>
+</tbody>
+</table>
+<h3 id="generacion-de-indices">📋 Generación de Índices<a class="headerlink" href="#generacion-de-indices" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Formato Excel estandarizado</strong>: Compatible con plantillas oficiales</li>
+<li><strong>Fórmulas automáticas</strong>: Para cálculo de página inicio/fin</li>
+<li><strong>Validación integrada</strong>: Verificación de estructura y coherencia</li>
+</ul>
+<h2 id="tipos-de-procesamiento-soportados">Tipos de Procesamiento Soportados<a class="headerlink" href="#tipos-de-procesamiento-soportados" title="Permanent link">&para;</a></h2>
+<h3 id="1-cuaderno-unico">1. Cuaderno Único<a class="headerlink" href="#1-cuaderno-unico" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Estructura</strong>: Plana (archivos directos en carpeta)</li>
+<li><strong>Uso</strong>: Procesos simples con un solo cuaderno</li>
+<li><strong>Validación</strong>: CUI individual de 23 dígitos</li>
+</ul>
+<h3 id="2-expediente-unico">2. Expediente Único<a class="headerlink" href="#2-expediente-unico" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Estructura</strong>: 4 niveles jerárquicos</li>
+<li><strong>Uso</strong>: Expedientes complejos con múltiples instancias y cuadernos</li>
+<li><strong>Niveles</strong>: <code>Expediente → Instancia → Cuaderno → Archivos</code></li>
+</ul>
+<h3 id="3-multiples-expedientes">3. Múltiples Expedientes<a class="headerlink" href="#3-multiples-expedientes" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Estructura</strong>: 5 niveles jerárquicos</li>
+<li><strong>Uso</strong>: Procesamiento masivo de múltiples expedientes</li>
+<li><strong>Niveles</strong>: <code>Año → Expediente → Instancia → Cuaderno → Archivos</code></li>
+</ul>
+<h2 id="arquitectura-del-sistema">Arquitectura del Sistema<a class="headerlink" href="#arquitectura-del-sistema" title="Permanent link">&para;</a></h2>
+<h3 id="patron-mvc-implementado">Patrón MVC Implementado<a class="headerlink" href="#patron-mvc-implementado" title="Permanent link">&para;</a></h3>
+<pre class="mermaid"><code>graph TB
+    V[View - Interfaz Gráfica] --&gt; C[Controller - Estrategias]
+    C --&gt; M[Model - Lógica de Negocio]
+    M --&gt; C
+    C --&gt; V
+
+    subgraph "Estrategias Autónomas"
+        C1[SingleCuadernoStrategy]
+        C2[SingleExpedienteStrategy]
+        C3[MultiExpedienteStrategy]
+    end
+
+    subgraph "Modelos Especializados"
+        M1[FileProcessor]
+        M2[MetadataExtractor]
+        M3[FolderAnalyzer]
+    end</code></pre>
+<h3 id="caracteristicas-arquitectonicas">Características Arquitectónicas<a class="headerlink" href="#caracteristicas-arquitectonicas" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Estrategias 100% autónomas</strong>: Cada tipo de procesamiento es completamente independiente</li>
+<li><strong>Patrón Observer</strong>: Notificaciones en tiempo real a la interfaz</li>
+<li><strong>Factory Pattern</strong>: Creación de extractores según tipo de archivo</li>
+<li><strong>Bajo acoplamiento</strong>: Separación estricta entre GUI y lógica de negocio</li>
+</ul>
+<h2 id="flujo-de-trabajo-tipico">Flujo de Trabajo Típico<a class="headerlink" href="#flujo-de-trabajo-tipico" title="Permanent link">&para;</a></h2>
+<h3 id="1-seleccion-de-modo">1. Selección de Modo<a class="headerlink" href="#1-seleccion-de-modo" title="Permanent link">&para;</a></h3>
+<p>El usuario selecciona uno de los tres tipos de procesamiento disponibles.</p>
+<h3 id="2-seleccion-de-carpeta">2. Selección de Carpeta<a class="headerlink" href="#2-seleccion-de-carpeta" title="Permanent link">&para;</a></h3>
+<p>Cada estrategia maneja su propia selección de carpeta con validaciones específicas.</p>
+<h3 id="3-analisis-y-validacion">3. Análisis y Validación<a class="headerlink" href="#3-analisis-y-validacion" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Verificación de estructura de carpetas</li>
+<li>Validación de CUIs (Códigos Únicos de Identificación)</li>
+<li>Detección de problemas estructurales</li>
+</ul>
+<h3 id="4-confirmacion">4. Confirmación<a class="headerlink" href="#4-confirmacion" title="Permanent link">&para;</a></h3>
+<p>El sistema presenta un resumen y solicita confirmación del usuario.</p>
+<h3 id="5-procesamiento">5. Procesamiento<a class="headerlink" href="#5-procesamiento" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Extracción de metadatos de cada documento</li>
+<li>Generación del índice Excel</li>
+<li>Notificaciones de progreso en tiempo real</li>
+</ul>
+<h3 id="6-finalizacion">6. Finalización<a class="headerlink" href="#6-finalizacion" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Índice generado y guardado</li>
+<li>Reportes de procesamiento</li>
+<li>Notificación de finalización</li>
+</ul>
+<h2 id="ventajas-del-sistema">Ventajas del Sistema<a class="headerlink" href="#ventajas-del-sistema" title="Permanent link">&para;</a></h2>
+<h3 id="para-usuarios-finales">Para Usuarios Finales<a class="headerlink" href="#para-usuarios-finales" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Ahorro de tiempo</strong>: Automatización de tareas manuales repetitivas</li>
+<li><strong>Consistencia</strong>: Formato estandarizado en todos los índices</li>
+<li><strong>Precisión</strong>: Eliminación de errores manuales en metadatos</li>
+</ul>
+<h3 id="para-administradores">Para Administradores<a class="headerlink" href="#para-administradores" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Escalabilidad</strong>: Procesamiento de múltiples expedientes</li>
+<li><strong>Trazabilidad</strong>: Logs detallados de todas las operaciones</li>
+<li><strong>Mantenimiento</strong>: Arquitectura modular fácil de mantener</li>
+</ul>
+<h3 id="para-desarrolladores">Para Desarrolladores<a class="headerlink" href="#para-desarrolladores" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Extensibilidad</strong>: Fácil adición de nuevas estrategias</li>
+<li><strong>Testabilidad</strong>: Componentes independientes y testeable</li>
+<li><strong>Mantenibilidad</strong>: Código limpio siguiendo principios SOLID</li>
+</ul>
+<h2 id="casos-de-uso-principales">Casos de Uso Principales<a class="headerlink" href="#casos-de-uso-principales" title="Permanent link">&para;</a></h2>
+<h3 id="oficinas-judiciales-pequenas">Oficinas Judiciales Pequeñas<a class="headerlink" href="#oficinas-judiciales-pequenas" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Procesamiento de cuadernos únicos</li>
+<li>Expedientes individuales ocasionales</li>
+<li>Interfaz simple y directa</li>
+</ul>
+<h3 id="juzgados-y-tribunales">Juzgados y Tribunales<a class="headerlink" href="#juzgados-y-tribunales" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Expedientes complejos con múltiples instancias</li>
+<li>Procesamiento regular de casos</li>
+<li>Validaciones estrictas de estructura</li>
+</ul>
+<h3 id="archivos-judiciales">Archivos Judiciales<a class="headerlink" href="#archivos-judiciales" title="Permanent link">&para;</a></h3>
+<ul>
+<li>Procesamiento masivo de expedientes históricos</li>
+<li>Organización por años y períodos</li>
+<li>Generación de índices para digitalización</li>
+</ul>
+<h2 id="integracion-con-herramientas-existentes">Integración con Herramientas Existentes<a class="headerlink" href="#integracion-con-herramientas-existentes" title="Permanent link">&para;</a></h2>
+<h3 id="microsoft-excel">Microsoft Excel<a class="headerlink" href="#microsoft-excel" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Requisito crítico</strong>: Excel debe estar instalado</li>
+<li><strong>Automatización COM</strong>: Integración directa con xlwings</li>
+<li><strong>Plantillas oficiales</strong>: Uso de formatos estandarizados</li>
+</ul>
+<h3 id="sistema-de-archivos">Sistema de Archivos<a class="headerlink" href="#sistema-de-archivos" title="Permanent link">&para;</a></h3>
+<ul>
+<li><strong>Multiplataforma</strong>: Soporte para Windows principalmente</li>
+<li><strong>Detección automática</strong>: Identificación de tipos de archivo</li>
+<li><strong>Validación de permisos</strong>: Verificación de acceso a carpetas</li>
+</ul>
+<hr />
+<div class="admonition tip">
+<p class="admonition-title">Próximos Pasos</p>
+<p>Continúa con la <a href="../installation/">Guía de Instalación</a> para configurar el sistema en tu entorno.</p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Volver al principio
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 HammerDev99
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://github.com/HammerDev99" target="_blank" rel="noopener" title="github.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+      
+      
+    
+    <a href="https://twitter.com/hammerdev99" target="_blank" rel="noopener" title="twitter.com" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "navigation.sections", "navigation.expand", "navigation.top", "search.highlight", "search.share", "content.code.annotate", "content.code.copy"], "search": "../../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copiado al portapapeles", "clipboard.copy": "Copiar al portapapeles", "search.result.more.one": "1 m\u00e1s en esta p\u00e1gina", "search.result.more.other": "# m\u00e1s en esta p\u00e1gina", "search.result.none": "No se encontraron documentos", "search.result.one": "1 documento encontrado", "search.result.other": "# documentos encontrados", "search.result.placeholder": "Teclee para comenzar b\u00fasqueda", "search.result.term.missing": "Falta", "select.version": "Seleccionar versi\u00f3n"}, "version": {"provider": "mike"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+        <script src="../../javascripts/mathjax.js"></script>
+      
+        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+      
+    
+  </body>
+</html>

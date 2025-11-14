@@ -1,0 +1,25 @@
+# AgilEx by Marduk - Documentación
+
+Documentación estática generada con MkDocs Material.
+
+**URL de producción**: https://docs.agilex.sprintjudicial.com
+
+## 🔄 Actualización Automática
+
+Esta documentación se genera automáticamente desde el proyecto principal:
+- Repositorio fuente: [GestionExpedienteElectronico_Version1](https://github.com/HammerDev99/GestionExpedienteElectronico_Version1)
+- Generador: MkDocs Material
+- Deploy: Easypanel con webhook de GitHub
+
+## 📝 Para actualizar
+
+En el proyecto principal:
+```powershell
+# Construir y sincronizar
+.\sync-docs.ps1
+
+# Hacer commit y push (ver opciones en el script)
+```
+
+---
+*Última actualización: 2025-11-13 22:52:36*
