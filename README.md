@@ -73,7 +73,7 @@ El despliegue utiliza un contenedor Nginx Alpine optimizado:
 
 ## 📊 Información del Build
 
-- **Última actualización**: 2025-11-14 10:26:34
+- **Última actualización**: 2025-11-14 19:09:32
 - **Generado por**: sync-docs.ps1 v2.0
 
 ---
