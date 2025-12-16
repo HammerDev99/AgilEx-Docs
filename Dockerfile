@@ -68,3 +68,6 @@ EXPOSE 80
 # Healthcheck para validar que Nginx está respondiendo
 HEALTHCHECK --interval=30s --timeout=3s --start-period=5s --retries=3 \
     CMD wget --quiet --tries=1 --spider http://localhost/ || exit 1
+
+# Comando para mantener Nginx corriendo en primer plano
+CMD ["nginx", "-g", "daemon off;"]
