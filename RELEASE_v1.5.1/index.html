@@ -1248,11 +1248,11 @@
 <p>Release de <strong>trazabilidad y seguridad de firma digital</strong> — no introduce cambios funcionales respecto a 1.5.0. El comportamiento y las capacidades de la aplicación permanecen idénticos.</p>
 </blockquote>
 <ul>
-<li><strong>Firma digital Authenticode renovada</strong>: certificado self-signed SHA256 (RSA 4096) vigente del 2026-04-15 al 2029-04-15, con marca de tiempo RFC 3161 de DigiCert. Thumbprint estable <code>92ADA07AA3455816E2555C6CDF8D5120AE7D57B1</code> durante 3 años, válido como criterio de whitelist ante SOCs institucionales.</li>
+<li><strong>Firma digital Authenticode renovada</strong>: certificado SHA256 (RSA 4096) vigente del 2026-04-15 al 2029-04-15, con marca de tiempo RFC 3161 de DigiCert.</li>
 <li><strong>Compilación definitiva en modo <code>onefile</code></strong>: un único ejecutable sin DLLs sueltas, optimizado para entornos corporativos con Microsoft Defender XDR, Attack Surface Reduction (ASR) y AppLocker activos.</li>
 <li><strong>Metadatos PE actualizados a 1.5.1.0</strong> (<code>FileVersion</code>, <code>ProductVersion</code>, <code>assemblyIdentity</code>) para trazabilidad explícita del binario ante herramientas de análisis estático y procedimientos de SOC.</li>
 <li><strong>Identidad jurídica ajustada a persona natural</strong>: <code>CompanyName="Daniel Arbelaez Alvarez"</code>, <code>LegalCopyright</code> con referencia a Licencia MIT y derechos morales irrenunciables (Ley 23 de 1982, art. 30). Aporte voluntario al Sistema Judicial Colombiano, sin relación contractual.</li>
-<li><strong>Gestión en curso de certificado EV Code Signing</strong>: validación técnica positiva con Andes SCD (white-label de Sectigo, raíz incluida en el Microsoft Trusted Root Program). Una vez emitido y aplicado, eliminará definitivamente la advertencia "Editor desconocido" de SmartScreen y otorgará reputación inmediata en Microsoft Defender.</li>
+<li><strong>Distribución institucional MSI</strong>: para despliegue en la Rama Judicial, AgilEx se distribuye también como paquete <code>.msi</code> firmado por el área de Seguridad Informática, eliminando la advertencia "Editor desconocido" de SmartScreen en esos equipos — ver la <a href="../user-guide/installation/#opcion-3-distribucion-institucional-msi-firmado">Guía de Instalación</a>.</li>
 <li><strong>Validación externa independiente conservada</strong>: VirusTotal 1/72 motores antivirus (detección aislada heurística genérica de Bkav Pro). Microsoft Defender, Kaspersky, ESET, Symantec, Sophos, BitDefender, CrowdStrike, SentinelOne y el resto de motores empresariales referentes = Undetected.</li>
 </ul>
 <h2 id="vista-previa">🔎 Vista previa<a class="headerlink" href="#vista-previa" title="Permanent link">&para;</a></h2>
@@ -1280,10 +1280,14 @@
 <div class="language-powershell highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="nb">Get-FileHash</span> <span class="p">.\</span><span class="n">AgilEx_by_Marduk</span><span class="p">.</span><span class="n">exe</span> <span class="n">-Algorithm</span> <span class="n">SHA256</span>
 </span></code></pre></div></p>
 <p><strong>Certificado firmante:</strong>
-- Subject: <code>CN=Daniel Arbelaez Alvarez, OU=AgilEx by Marduk, L=Bogota, S=Bogota D.C., C=CO, E=darbelaal@cendoj.ramajudicial.gov.co</code>
-- Thumbprint: <code>92ADA07AA3455816E2555C6CDF8D5120AE7D57B1</code>
 - Vigencia: 2026-04-15 a 2029-04-15
 - Algoritmo: Authenticode SHA256 + Timestamp RFC 3161 (DigiCert TSA)</p>
+<div class="admonition tip">
+<p class="admonition-title">Verificación del firmante</p>
+<p>Para consultar el firmante y el thumbprint del certificado del ejecutable
+que tenga en su equipo, ejecute en PowerShell:
+<code>Get-AuthenticodeSignature .\AgilEx_by_Marduk.exe | Format-List SignerCertificate</code></p>
+</div>
 <h2 id="recursos-adicionales">🎓 Recursos Adicionales<a class="headerlink" href="#recursos-adicionales" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="https://enki.care/UltimateO">Video Tutorial</a></li>

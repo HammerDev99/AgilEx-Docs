@@ -1560,18 +1560,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#version-150-estimada-q3-2025" class="md-nav__link">
+  <a href="#version-200" class="md-nav__link">
     <span class="md-ellipsis">
-      Versión 1.5.0 (Estimada: Q3 2025)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#version-200-estimada-q4-2025" class="md-nav__link">
-    <span class="md-ellipsis">
-      Versión 2.0.0 (Estimada: Q4 2025)
+      Versión 2.0.0
     </span>
   </a>
   
@@ -2216,18 +2207,9 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#version-150-estimada-q3-2025" class="md-nav__link">
+  <a href="#version-200" class="md-nav__link">
     <span class="md-ellipsis">
-      Versión 1.5.0 (Estimada: Q3 2025)
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#version-200-estimada-q4-2025" class="md-nav__link">
-    <span class="md-ellipsis">
-      Versión 2.0.0 (Estimada: Q4 2025)
+      Versión 2.0.0
     </span>
   </a>
   
@@ -2341,11 +2323,10 @@
 <h2 id="historial-de-versiones">Historial de Versiones<a class="headerlink" href="#historial-de-versiones" title="Permanent link">&para;</a></h2>
 <h3 id="version-151-abril-2026">🔏 Versión 1.5.1 - Abril 2026<a class="headerlink" href="#version-151-abril-2026" title="Permanent link">&para;</a></h3>
 <p><strong>Cambio de trazabilidad y re-firma digital (sin cambios funcionales)</strong></p>
-<p>Esta versión no introduce modificaciones en el comportamiento del aplicativo. Los cambios son exclusivamente de firma digital, metadatos PE y trazabilidad del binario, en el marco de la gestión del incidente XDR 804977 con el SOC de la Rama Judicial.</p>
+<p>Esta versión no introduce modificaciones en el comportamiento del aplicativo. Los cambios son exclusivamente de firma digital, metadatos PE y trazabilidad del binario, en el marco de una gestión de mitigación de falsos positivos de detección con el área de Seguridad Informática de la Rama Judicial.</p>
 <h4 id="firma-digital-renovada">Firma digital renovada<a class="headerlink" href="#firma-digital-renovada" title="Permanent link">&para;</a></h4>
 <ul>
-<li><strong>Certificado de firma actualizado</strong>: nuevo certificado self-signed SHA256 (RSA 4096) vigente del 2026-04-15 al 2029-04-15.</li>
-<li><strong>Thumbprint estable</strong>: <code>92ADA07AA3455816E2555C6CDF8D5120AE7D57B1</code> (utilizable como criterio de whitelist).</li>
+<li><strong>Certificado de firma actualizado</strong>: nuevo certificado SHA256 (RSA 4096) vigente del 2026-04-15 al 2029-04-15.</li>
 <li><strong>Algoritmo Authenticode</strong>: SHA256 + Timestamp RFC 3161 (DigiCert TSA).</li>
 <li><strong>Modo de compilación definitivo</strong>: PyInstaller onefile (compatibilidad con ASR/AppLocker en entornos corporativos).</li>
 </ul>
@@ -2357,9 +2338,8 @@
 </ul>
 <h4 id="contexto">Contexto<a class="headerlink" href="#contexto" title="Permanent link">&para;</a></h4>
 <ul>
-<li>Incidente SOC Rama Judicial: <code>804977</code> / <code>RJ-MDE-MAL-ALERT-002</code> (detección "Malgent" — falso positivo).</li>
-<li>Validación externa: VirusTotal 1/72 motores, Microsoft Defender = Undetected.</li>
-<li>Trámite paralelo: certificado comercial EV Code Signing con Andes SCD (white-label Sectigo, raíz incluida en Microsoft Trusted Root Program), validado técnicamente el 2026-04-20.</li>
+<li>Detección aislada de un motor antivirus, confirmada como falso positivo mediante validación externa (VirusTotal 1/72 motores, Microsoft Defender = Undetected).</li>
+<li>La distribución institucional (GPO/SCCM) se realiza mediante paquete <code>.msi</code> firmado por el área de Seguridad Informática con el certificado de la entidad — ver <a href="../../user-guide/installation/#opcion-3-distribucion-institucional-msi-firmado">Guía de Instalación</a>.</li>
 </ul>
 <h3 id="version-150-noviembre-2025">🚀 Versión 1.5.0 - Noviembre 2025<a class="headerlink" href="#version-150-noviembre-2025" title="Permanent link">&para;</a></h3>
 <p><strong>Release funcional previa — integración con Umami Analytics y validación ampliada de formatos</strong></p>
@@ -2567,14 +2547,7 @@
 </ul>
 <h2 id="roadmap-futuro">Roadmap Futuro<a class="headerlink" href="#roadmap-futuro" title="Permanent link">&para;</a></h2>
 <h3 id="proximas-versiones-planeadas">Próximas Versiones Planeadas<a class="headerlink" href="#proximas-versiones-planeadas" title="Permanent link">&para;</a></h3>
-<h4 id="version-150-estimada-q3-2025">Versión 1.5.0 (Estimada: Q3 2025)<a class="headerlink" href="#version-150-estimada-q3-2025" title="Permanent link">&para;</a></h4>
-<ul>
-<li><strong>Soporte multiplataforma completo</strong>: Linux y macOS</li>
-<li><strong>API REST</strong>: Interfaz para integración con otros sistemas</li>
-<li><strong>Procesamiento en lote</strong>: Automatización de grandes volúmenes</li>
-<li><strong>Templates personalizables</strong>: Configuración de formatos de salida</li>
-</ul>
-<h4 id="version-200-estimada-q4-2025">Versión 2.0.0 (Estimada: Q4 2025)<a class="headerlink" href="#version-200-estimada-q4-2025" title="Permanent link">&para;</a></h4>
+<h4 id="version-200">Versión 2.0.0<a class="headerlink" href="#version-200" title="Permanent link">&para;</a></h4>
 <ul>
 <li><strong>Interfaz web</strong>: GUI moderna basada en navegador</li>
 <li><strong>Base de datos integrada</strong>: Persistencia de configuraciones</li>
