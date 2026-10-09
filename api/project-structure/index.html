@@ -2157,18 +2157,19 @@
 <p>Directorio que contiene todos los recursos estáticos necesarios:</p>
 <ul>
 <li><strong><code>000IndiceElectronicoC0.xlsm</code></strong>: Template Excel oficial para índices</li>
-<li><strong><code>JUZGADOS.csv</code></strong>: Base de datos de juzgados colombianos</li>
+<li><strong><code>JUZGADOS.csv</code></strong>: Lista de ejemplo de despachos para el campo «Despacho» (editable)</li>
 <li><strong><code>TRD.csv</code></strong>: Clasificación de tipos documentales (TRD)</li>
 <li><strong><code>last_version.json</code></strong>: Control de versiones para actualizaciones automáticas</li>
 <li><strong>Imágenes UI</strong>: Iconos, logos y recursos gráficos</li>
 </ul>
 <h4 id="archivos-de-datos-de-referencia">Archivos de Datos de Referencia<a class="headerlink" href="#archivos-de-datos-de-referencia" title="Permanent link">&para;</a></h4>
 <h5 id="juzgadoscsv"><code>JUZGADOS.csv</code><a class="headerlink" href="#juzgadoscsv" title="Permanent link">&para;</a></h5>
-<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>codigo,nombre,ciudad,especialidad
-</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>001,Juzgado Primero Civil Municipal,Bogotá,Civil
-</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>002,Juzgado Segundo Penal del Circuito,Medellín,Penal
+<p>Lista de ejemplo que alimenta las sugerencias del campo «Despacho». Cada despacho puede reemplazarla por la suya o escribir el nombre directamente en el campo.
+<div class="language-text highlight"><pre><span></span><code><span id="__span-16-1"><a id="__codelineno-16-1" name="__codelineno-16-1" href="#__codelineno-16-1"></a>idjuzgado,&quot;nombre&quot;
+</span><span id="__span-16-2"><a id="__codelineno-16-2" name="__codelineno-16-2" href="#__codelineno-16-2"></a>1,&quot;JUZGADO 001 CIVIL MUNICIPAL DE EJEMPLO&quot;
+</span><span id="__span-16-3"><a id="__codelineno-16-3" name="__codelineno-16-3" href="#__codelineno-16-3"></a>2,&quot;JUZGADO 001 PENAL DEL CIRCUITO DE EJEMPLO&quot;
 </span><span id="__span-16-4"><a id="__codelineno-16-4" name="__codelineno-16-4" href="#__codelineno-16-4"></a>...
-</span></code></pre></div>
+</span></code></pre></div></p>
 <h5 id="trdcsv-tabla-de-retencion-documental"><code>TRD.csv</code> - Tabla de Retención Documental<a class="headerlink" href="#trdcsv-tabla-de-retencion-documental" title="Permanent link">&para;</a></h5>
 <div class="language-text highlight"><pre><span></span><code><span id="__span-17-1"><a id="__codelineno-17-1" name="__codelineno-17-1" href="#__codelineno-17-1"></a>codigo,tipo_documento,tiempo_retencion,disposicion
 </span><span id="__span-17-2"><a id="__codelineno-17-2" name="__codelineno-17-2" href="#__codelineno-17-2"></a>001,Demanda,Permanente,Conservar
